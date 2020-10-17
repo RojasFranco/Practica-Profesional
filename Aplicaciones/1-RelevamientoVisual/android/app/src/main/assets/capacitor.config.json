@@ -1,0 +1,13 @@
+{
+  "appId": "relevamientovisual.ionic.starter",
+  "appName": "Relevamiento visual",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  },
+  "cordova": {}
+}

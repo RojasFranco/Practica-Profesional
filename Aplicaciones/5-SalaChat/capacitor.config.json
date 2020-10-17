@@ -1,0 +1,13 @@
+{
+  "appId": "salaChat.ionic.starter",
+  "appName": "Conversando en el aula",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  },
+  "cordova": {}
+}

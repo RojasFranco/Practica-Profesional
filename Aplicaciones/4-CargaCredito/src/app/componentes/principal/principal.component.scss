@@ -1,0 +1,31 @@
+ion-content{
+    --padding-top: 8vh;
+    --padding-start: 5vw;
+    --padding-end: 5vw;
+    --background: rgb(1, 16, 58);
+    color: white;
+}
+
+.margenVertical{
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+
+ion-item{
+    border: 2px solid #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 16, 58);
+}
+
+.primerBtn{
+    margin-top: 12vh;
+}
+
+h1{
+    color: white;
+}
+
+.ultimoBtn{
+    margin-top: 20vh;
+}

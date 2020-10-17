@@ -1,0 +1,27 @@
+ion-content{
+    --padding-start: 2vw;
+    --padding-end: 2vw;
+    color: white;
+}
+
+ion-button{
+    height: 40vh;
+    width: 100%;
+}
+
+.btnA{
+    --background: url('../../../assets/imagenes/4A.jpg') 0 0/100% 100% no-repeat;
+}
+
+.btnB{
+    --background: url('../../../assets/imagenes/4B.jpg') 0 0/100% 100% no-repeat;
+}
+
+.margenVertical{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+h1{
+    font-size: 8vh;
+}

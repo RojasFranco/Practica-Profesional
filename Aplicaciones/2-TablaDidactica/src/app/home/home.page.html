@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="dark" class="ion-text-center">
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-item >
+      <ion-label>Ingrese su correo</ion-label>
+      <ion-input [(ngModel)]="usuario.correo" clear-input="true" placeholder="ejemplo@gmail.com"></ion-input>
+    </ion-item>
+
+    <ion-item class="margenVertical">
+      <ion-label>Ingrese su contraseña</ion-label>
+      <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+    </ion-item>    
+  </div>  
+  
+  <div>
+    <ion-button expand="block" (click)="Login()" color="dark" shape="round" fill="solid">Ingresar</ion-button>
+    <ion-button expand="block"  (click)="Registrar()" color="dark" shape="round" outline class="margenChicoArriba">Registrarme</ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div>
+    <div>
+      <ion-row class="ion-justify-content-center">
+        <ion-button (click)="CompletarAdmin()" color="primary">Admin</ion-button>
+        <ion-button (click)="CompletarUsuario()" color="secondary">Usuario</ion-button>        
+      </ion-row>      
+      <ion-row class="ion-justify-content-center">
+        <ion-button (click)="CompletarInvitado()" color="tertiary">Invitado</ion-button>
+        <ion-button (click)="CompletarAnonimo()" color="success">Anonimo</ion-button>
+      </ion-row >
+      <ion-row class="ion-justify-content-center">
+        <ion-button (click)="CompletarTester()" color="warning">Tester</ion-button>
+      </ion-row>      
+    </div>      
+  </div>
+</ion-footer>

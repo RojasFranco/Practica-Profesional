@@ -1,0 +1,33 @@
+.principal{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/splash.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nombre, .curso{
+    position: relative;
+    animation: miAnimacion;
+    animation-duration: 3s;
+}
+
+
+@keyframes miAnimacion{
+    0% {left: -75vw;}
+    25% {left: -20vw;}
+    50% {left: 20vw;}
+    75% {left: -20vw;}
+    100% {left: 0vw;}
+
+}
+
+p{
+    color: white;
+    font-size: 7vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}

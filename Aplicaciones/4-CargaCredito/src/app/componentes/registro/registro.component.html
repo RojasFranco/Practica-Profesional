@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-item>
+    <ion-label>Ingrese su Correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo" placeholder="ejemplo@ejemplo.com"></ion-input>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label>Ingrese su Contraseña</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="labels">Perfil</ion-label>
+    <ion-select [(ngModel)]="this.perfil" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let perfil of perfiles"> {{ perfil }} </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label class="labels">Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let sexo of sexos"> {{ sexo }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <div>
+    <ion-button (click)="Registrar()" color="light" fill="outline" expand="full" shape="round">Registrar</ion-button>
+    <ion-button (click)="Volver()" class="margenArriba" color="light" fill="outline" expand="full" shape="round">Volver</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="ligth" class="ion-text-center">
+      <ion-title  color="success" class="ion-margin-end">
+          Curso PPS-4B
+      </ion-title>         
+      <ion-icon (click)="Volver()" size="large" slot="start" color="success" name="arrow-back-circle-outline"></ion-icon>
+  </ion-toolbar>    
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngFor="let item of listaMensajes">
+      <ion-row *ngIf="item.usuario == mailUsuarioActual; else otroUsuario" class="ion-justify-content-end">
+          <ion-col size="8" class="informacion">{{item.fecha}}</ion-col>
+          <ion-col size="8" class="mensajes"><label>{{item.mensaje}}</label></ion-col>
+      </ion-row>
+      <ng-template #otroUsuario>
+          <ion-row class="ion-justify-content-start">
+              <ion-col size="8" class="informacion">{{item.usuario}} - {{item.fecha}}</ion-col>
+              <ion-col size="8" class="mensajes"><label>{{item.mensaje}}</label></ion-col>                
+          </ion-row>
+      </ng-template>
+      
+  </ion-grid>
+
+  <ion-row class="contenedorMsj">
+      <ion-col size="9">
+          <textarea class="txtMje" placeholder="Escriba su mensaje..." [(ngModel)]="mensajeNuevo" rows="1" ></textarea>
+      </ion-col>
+      <ion-col>
+          <ion-button color="success" (click)="AgregarMje()" size="small" class="btnEnviar"><ion-icon name="send-outline" ></ion-icon></ion-button>
+      </ion-col>
+  </ion-row>
+
+</ion-content>

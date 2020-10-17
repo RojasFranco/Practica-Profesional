@@ -1,0 +1,53 @@
+$color-c-feas: rgb(88, 88, 88);
+
+ion-content{
+    height: 100vh;
+    --padding-top: 10%;
+    --padding-start: 5%;
+    --padding-end: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // align-items: center;
+}
+
+.margenArriba{
+    margin-top: 5vh;
+}
+
+.botones{
+    height: 35vh;
+    width: 80vw;    
+}
+
+.contenedores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .botones:hover{
+//     background-color: rgb(127, 127, 243);
+//     color: white;
+// }
+.moverTitulo{
+    margin-left: 15vw;
+    // font-size: 3vh;
+    text-transform: uppercase;
+}
+
+.btnCosasLindas{
+    background: url('../../../assets/cosasLindas.jpg');
+    background-size: 100% 100%;    
+    background-repeat: no-repeat;
+}
+
+.btnCosasFeas{
+    color: $color-c-feas;
+    background: url('../../../assets/cosasfeas.jpg');
+    background-size: 100% 100%;    
+    background-repeat: no-repeat;
+    // border: 1px solid $color-c-feas;
+    // background-color: white;
+    --border-color:$color-c-feas;
+}

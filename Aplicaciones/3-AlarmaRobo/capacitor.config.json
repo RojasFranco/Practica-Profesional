@@ -1,0 +1,13 @@
+{
+  "appId": "AlarmaRobo.ionic.starter",
+  "appName": "Alarma de Robo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  },
+  "cordova": {}
+}

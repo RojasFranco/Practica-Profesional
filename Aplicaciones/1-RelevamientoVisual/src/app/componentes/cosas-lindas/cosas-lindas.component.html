@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="Volver()"><ion-icon name="arrow-back-sharp"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title class="tituloHeader ion-text-center">Cosas Lindas</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content>
+  <!--  FOTOS  -->
+  <!-- <div *ngIf="sacoFotos">
+    <div *ngFor="let foto of camara.photos">
+      <ion-img [src]="foto.webviewPath" alt=""></ion-img>
+    </div>
+  </div> -->  
+
+  <ion-card *ngFor="let elemento of galeriaCompleta">
+    <ion-card-header class="ion-text-center">
+      <ion-card-title color="primary">Foto de {{ elemento.datos.usuario }}</ion-card-title>
+      <ion-card-subtitle>Fecha {{ elemento.datos.fecha }}</ion-card-subtitle>      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-img [src]="elemento.datos.foto"></ion-img>
+    </ion-card-content>   
+    
+    <!-- <div class="ion-text-center alinearBotonesAbajo"> -->
+    <div class="alinearBotonesAbajo">
+      <ion-button (click)="Votar(elemento)" color="primary" class="btnVotar" fill="outline" strong="true">
+        <ion-icon name="heart"></ion-icon>Votar</ion-button>        
+        <ion-badge class="badgeVotos" color="primary">Votos: {{ elemento.datos.cantidadVotos }}</ion-badge>
+    </div>    
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <div class="ion-text-center">
+    <ion-button *ngIf="camara.photos.length==0; else cargoFotos" color="primary" (click)="TomarFoto()" fill="outline" strong="true" >Subir Foto</ion-button>
+    <ng-template #cargoFotos>
+      <ion-button color="primary" (click)="SubirFoto()" fill="outline" strong="true">Confirmar</ion-button>
+    </ng-template>
+          
+    
+  </div>
+</ion-footer>

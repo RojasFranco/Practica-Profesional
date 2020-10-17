@@ -1,0 +1,30 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button color="secondary" size="small">
+        cerrar sesion
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar> -->
+  <ion-toolbar color= "primary">
+    <ion-buttons slot="end" class="ion-margin-end" (click)="CerrarSesion()">
+      Salir
+      <!-- <ion-button (click)="CerrarSesion()">Cerrar Sesion</ion-button> -->
+    </ion-buttons>
+    <ion-title class="ion-text-center moverTitulo">
+      Bienvenido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenedores">
+    <ion-button class="botones btnCosasLindas" (click)="VerCosasLindas()" fill="outline"></ion-button>
+  </div>
+
+  <div class="contenedores margenArriba">
+    <ion-button class="botones btnCosasFeas" (click)="VerCosasFeas()" fill="outline"></ion-button>
+  </div>  
+
+</ion-content>

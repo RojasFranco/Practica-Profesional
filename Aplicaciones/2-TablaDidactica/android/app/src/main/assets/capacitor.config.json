@@ -1,0 +1,13 @@
+{
+  "appId": "miTablaDidactica.ionic.starter",
+  "appName": "Tabla Didactica",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  },
+  "cordova": {}
+}

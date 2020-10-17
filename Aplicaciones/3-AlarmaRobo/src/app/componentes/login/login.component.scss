@@ -1,0 +1,28 @@
+ion-content{
+    --padding-top: 8vh;
+    --padding-start: 5vw;
+    --padding-end: 5vw;
+    // --background: rgb(1, 58, 1);
+}
+.labels{
+    color: green;
+    font-family: serif;
+    font-size: 3vh;
+}
+
+.margenVertical{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.margenArriba{
+    margin-top: 5vh;
+}
+
+.margenChicoArriba{
+    margin-top: 4vh;
+}
+
+ion-footer{
+    margin-bottom: 5vh;
+}

@@ -1,0 +1,34 @@
+<app-cabecera-principal></app-cabecera-principal>
+
+<ion-content class="ion-text-center">
+  
+
+  <div *ngIf="!pedirClave">
+    <ion-button *ngIf="estaApagada; else estaPrendida" (click)="PulsarBoton()" class="btnEncender">
+      ACTIVAR
+    </ion-button>
+    <ng-template #estaPrendida>
+      <ion-button (click)="PulsarBoton()" class="btnApagar">
+        DESACTIVAR
+      </ion-button>
+    </ng-template>
+  </div>
+
+  <div *ngIf="pedirClave">
+    
+    <ion-item lines="none" class="itemClave">
+      <ion-label position="floating" class="labels margenArriba">Ingrese su clave para confirmar</ion-label>
+      <ion-input  [(ngModel)]="claveIngresada" type="password"></ion-input>
+    </ion-item>
+    <div>
+      <ion-button (click)="ConfirmarDesactivar()" class="btnConfirmar margenVertical" fill="outline" expand="full">Confirmar</ion-button>
+      <ion-button (click)="Cancelar()" class="btnConfirmar" fill="outline" expand="full">Cancelar</ion-button>
+    </div>
+  </div>
+
+  <h4 *ngIf="estaApagada; else estaPrendida" class="margenArriba desactivada">Su alarma está desactivada</h4>
+  <ng-template #estaPrendida>
+    <h4 class="margenArriba activada">Su alarma está activada</h4>
+  </ng-template>
+  
+</ion-content>

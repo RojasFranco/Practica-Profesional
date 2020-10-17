@@ -1,0 +1,22 @@
+ion-content{
+    --padding-top: 10vh;
+    --padding-start: 5vw;
+    --padding-end: 5vw;
+    --pading-bottom: 10vh;
+    --background: url('../../../assets/posibleFondo.jpg') 100% 100%;
+}
+
+ion-fab-button{
+    width: 20vw;
+    --border-radius: 0px;
+}
+
+.imagen{    
+    height: 100%;
+    object-fit: fill;
+}
+
+.fabBtn{
+    height: 9vh;
+    width: 18vw;
+}

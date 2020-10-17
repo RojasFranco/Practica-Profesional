@@ -1,0 +1,38 @@
+<app-cabecera-inicio></app-cabecera-inicio>
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Ingrese su correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo" placeholder="Ingrese su correo..."></ion-input>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label position="stacked">Ingrese su clave</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+  </ion-item>
+
+  <ion-row class="ion-justify-content-around margenVertical">
+    <ion-button class="btnIngresar" color="primary" fill="outline" (click)="Ingresar()" strong="true">Ingresar</ion-button>
+    <ion-button color="medium" fill="outline" strong="true" (click)="IrARegistro()">Registrarme</ion-button>
+  </ion-row>
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row class="ion-justify-content-between">
+      <ion-button color="primary" (click)="CompletarAdmin()" fill="outline">Admin</ion-button>
+      <ion-button color="medium" (click)="CompletarUsuario()" fill="outline">Usuario</ion-button>
+    </ion-row>
+    
+    <ion-row class="ion-justify-content-between">
+      <ion-button color="primary" (click)="CompletarTester()" fill="outline">Tester</ion-button>
+      <ion-button color="medium" (click)="CompletarInvitado()" fill="outline">Invitado</ion-button>
+    </ion-row>
+    
+    <ion-row class="ion-justify-content-between">
+      <ion-button color="primary" (click)="CompletarAnonimo()" fill="outline">Anonimo</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

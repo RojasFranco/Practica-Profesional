@@ -1,0 +1,29 @@
+<app-cabecera-inicio></app-cabecera-inicio>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Ingrese su Correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo" placeholder="ejemplo@ejemplo.com"></ion-input>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label>Ingrese su Contraseña</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+  </ion-item>
+
+  <div>
+    <ion-button (click)="Login()" color="light" fill="outline" expand="full" shape="round">Ingresar</ion-button>    
+    <ion-row class="margenArriba ion-justify-content-center">
+      <a (click)="Registrarme()">¡Quiero Registrarme!</a>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-button (click)="CompletarAdmin()" fill="clear" color="secondary">Admin</ion-button>
+  <ion-button  shape="round" (click)="CompletarUsuario()" fill="outline" color="danger">Usuario</ion-button>
+  <ion-button fill="solid" (click)="CompletarTester()" color="light">Tester</ion-button>
+  <ion-button shape="round" (click)="CompletarInvitado()" color="medium">Invitado</ion-button>
+  <ion-button  fill="solid" (click)="CompletarAnonimo()" color="dark">Anonimo</ion-button>
+</ion-footer>

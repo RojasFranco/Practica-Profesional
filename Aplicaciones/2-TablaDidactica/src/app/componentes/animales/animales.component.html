@@ -1,0 +1,7 @@
+  <!-- <ion-button>Gato</ion-button>
+  <ion-button>Perro</ion-button>
+  <ion-button>Loro</ion-button> -->
+
+  <ion-row *ngFor="let item of listaMostrar" class="ion-justify-content-center">
+    <ion-button color="light" (click)="Elegir(item.tipo)"> <ion-img [src]="item.imagen" class="imagen"></ion-img> </ion-button>
+  </ion-row>

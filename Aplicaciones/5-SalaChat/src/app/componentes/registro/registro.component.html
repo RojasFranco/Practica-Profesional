@@ -1,0 +1,46 @@
+<app-cabecera-inicio></app-cabecera-inicio>
+
+<ion-content>
+  <ion-item lines="none" >
+    <ion-icon name="mail-outline" color="light" class="ion-margin-end"></ion-icon>
+    <ion-label >Ingrese su Correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo" type="email" placeholder="ejemplo@ejemplo.com"></ion-input>
+  </ion-item>
+  
+  <ion-item lines="none" class="margenVertical">
+    <ion-icon name="key-outline" color="light" class="ion-margin-end"></ion-icon>
+    <ion-label >Ingrese su contraseña</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="labels">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      Perfil</ion-label>
+    <ion-select [(ngModel)]="this.perfil" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let perfil of perfiles"> {{ perfil }} </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label class="labels">
+      <ion-icon slot="start" name="male-female-outline"></ion-icon>
+      Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let sexo of sexos"> {{ sexo }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-row class="ion-justify-content-around ion-align-items-center">    
+    <ion-button (click)="Registrar()" shape="round" fill="outline" color="light">
+      <ion-icon slot="start" name="checkmark-circle-outline"></ion-icon>
+      Confirmar
+    </ion-button>
+
+    <ion-button (click)="Volver()" shape="round" fill="outline" color="light">
+      <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>
+      Volver  
+    </ion-button>
+  </ion-row>
+
+</ion-content>

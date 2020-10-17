@@ -1,0 +1,32 @@
+<app-cabecera-inicio></app-cabecera-inicio>
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Ingrese su correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo" placeholder="Ingrese su correo..."></ion-input>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label position="stacked">Ingrese su clave</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" placeholder="Ingrese su clave..."></ion-input>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label>Perfil</ion-label>
+    <ion-select [(ngModel)]="this.perfil" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let perfil of perfiles"> {{ perfil }} </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label>Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo"  cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let sexo of sexos" > {{ sexo }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-row class="ion-justify-content-around margenVertical">
+    <ion-button class="btnIngresar" (click)="Registrar()" color="primary" fill="outline" strong="true">Confirmar</ion-button>
+    <ion-button color="medium" (click)="Volver()" fill="outline" strong="true">Volver</ion-button>
+  </ion-row>
+
+</ion-content>

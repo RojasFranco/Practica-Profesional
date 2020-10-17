@@ -1,0 +1,58 @@
+ion-content{
+    --padding-top: 25vh;
+    --padding-bottom: 25vh;
+    --padding-start: 5vw;
+    --padding-end: 5vw;
+    --background: rgb(223, 248, 223);
+}
+
+.btnEncender, .btnApagar{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vh;
+    font-style: unset;
+    height: 30vh;
+    width: 70vw;
+    --border-radius: 20px;
+}
+
+.btnEncender{
+    --background: rgb(5, 150, 5);
+}
+
+.btnApagar{
+    --background: red;
+}
+
+.labels{    
+    color: green;
+    font-family: serif;
+    font-size: 3vh;    
+}
+
+.itemClave{
+    --background: rgb(223, 248, 223);
+
+}
+
+.margenVertical{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.btnConfirmar{
+    --color: green;
+    --border-color: green;
+}
+
+.margenArriba{
+    margin-top: 5vh;
+}
+
+.desactivada{
+    color: red;
+}
+
+.activada{
+    color: rgb(3, 112, 3);
+}

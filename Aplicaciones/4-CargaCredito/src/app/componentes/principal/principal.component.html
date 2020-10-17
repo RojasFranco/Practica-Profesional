@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary" class="ion-text-center ion-text-capitalize">
+      <h3>Bienvenido</h3>
+      <!-- <h6 class="">Salir</h6> -->
+    </ion-title>    
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+  <h1>Saldo Actual: ${{ saldoActualUsuario }}</h1>
+  <ion-button (click)="Escanear()" class="primerBtn" color="light" fill="outline" expand="full" shape="round">Cargar Saldo</ion-button>
+  <ion-button (click)="LimpiarCargas()" class="margenVertical" color="light" fill="outline" expand="full" shape="round">Limpiar Cargas</ion-button>  
+  <ion-button (click)="Salir()" class="ultimoBtn" color="light" fill="outline" expand="full" shape="round">Salir</ion-button>
+</ion-content>

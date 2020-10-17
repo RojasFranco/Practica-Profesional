@@ -1,0 +1,35 @@
+  <ion-fab vertical = "top" horizontal="start" slot="end">    
+    <ion-fab-button class="fabBtn" color="dark"><ion-img class="imagen" [src]="imgBanderaElegida"></ion-img> </ion-fab-button>
+    <ion-fab-list side="end">      
+      <ion-fab-button>
+        <ion-img class="imagen" (click)="ElegirIdioma('espaniol')" src = "../../assets/banderaEspaniol.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-img src = "../../assets/banderaIngles.jpg" (click)="ElegirIdioma('ingles')" class="imagen"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-img src = "../../assets/banderPortuges.png" (click)="ElegirIdioma('portugues')" class="imagen"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list>    
+  </ion-fab>
+
+  <ion-fab vertical = "bottom" horizontal="end" slot="end">
+    <ion-fab-button class="fabBtn" color="dark"> <ion-img src = "../../assets/opcionesBtn.png" class="imagen"></ion-img> </ion-fab-button>
+    <ion-fab-list side="start">      
+      <ion-fab-button (click)="Elegir('animales')">
+        <ion-img src = "../../assets/animales.png" class="imagen"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="Elegir('colores')">
+        <ion-img src = "../../assets/colores.jpg" class="imagen"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button  (click)="Elegir('numeros')">
+        <ion-img src = "../../assets/numeros.jpg" class="imagen"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list>
+  
+  </ion-fab>
+
+  <ion-content class="ion-text-center">
+    <!-- <app-animales [listaMostrar]="listaElegida" [idiomaReproducir] = "idiomaSeleccionado" ></app-animales> -->
+    <app-animales [listaMostrar]="listaElegida" (eventoReproducirElemento)= "Reproducir($event)"></app-animales>
+  </ion-content>  

@@ -1,0 +1,14 @@
+ion-button{
+    height: 12vh;
+    margin-top: 3vh;
+    width: 60vw;
+    --padding-start: 0vw;
+    --padding-end: 0vw;
+    --border-radius: 15px;
+}
+
+.imagen{    
+    height: 100%;
+    object-fit: fill;
+    --ion-color-base: var(--ion-color-light, #ffffff) !important;
+}

@@ -1,0 +1,53 @@
+.tituloHeader{
+    margin-right: 15vw;
+}
+
+ion-content{
+    height: 100vh;
+    // --padding-top: 10%;
+    // --padding-start: 5%;
+    // --padding-end: 5%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: center;
+}
+
+ion-card-header{
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+}
+ion-card{
+    height: 80vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+ion-card-content{
+    height: 82%;
+    // width: 100%;
+}
+
+ion-img{
+    height: 100%;
+}
+
+.divBtn{
+    height: 1vh;
+}
+
+.btnVotar{
+    height: 80%;
+    margin-left: 32%;
+}
+
+.alinearBotonesAbajo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badgeVotos{
+    margin-right: 4vw;
+    height: 50%;
+    // margin-bottom: 0px;
+}

@@ -1,0 +1,31 @@
+ion-content{
+    --padding-top: 8vh;
+    --padding-start: 5vw;
+    --padding-end: 5vw;
+    --background:  rgb(4, 73, 15);
+    color: white;
+}
+.footer{
+    background-color:  rgb(4, 73, 15);
+    color: white;
+}
+ion-item, ion-footer{
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --background:  rgb(4, 73, 15);
+    color: white;
+
+}
+
+.margenVertical{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.margenArriba{
+    margin-top: 6vh;
+}
+
+.margenChicoArriba{
+    margin-top: 4vh;
+}

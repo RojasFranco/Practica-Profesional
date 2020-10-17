@@ -1,0 +1,36 @@
+<app-cabecera-principal></app-cabecera-principal>
+
+<ion-content>
+
+  <ion-item lines="none">
+    <ion-label position="floating"  class="labels">Ingrese su Correo</ion-label>
+    <ion-input [(ngModel)]="usuario.correo"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="margenVertical">
+    <ion-label position="floating" class="labels">Ingrese su Contraseña</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="labels">Perfil</ion-label>
+    <ion-select [(ngModel)]="this.perfil" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let perfil of perfiles"> {{ perfil }} </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="margenVertical">
+    <ion-label class="labels">Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo" interface="popover" cancelText="Cancelar" okText="Listo">
+      <ion-select-option *ngFor="let sexo of sexos"> {{ sexo }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div>
+    <ion-button (click)="Registrar()" color="success" class="margenVertical" 
+      fill="outline" expand="full">Confirmar Registro</ion-button>
+    <ion-button (click)="Volver()" color="success" expand="full" fill="outline">Volver</ion-button>
+  </div>
+
+</ion-content>
+
